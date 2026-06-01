@@ -1,12 +1,15 @@
 # Propuesta de gestión de vulnerabilidades en cadena de suministro de software
+  
+**Asignatura:** Producción de Software EMI 305  
+**Profesor:** Pablo Valenzuela  
+**Programa:** Magíster en Ingeniería en Informática  
+**Universidad:** Universidad de La Frontera  
 
-Asignatura: **Produccion de Software EMI 305**
-Profesor: Pablo Valenzuela 
 **Alumnos:**
-- Matías Toro 
-- Eduardo Gallardo 
-**Magister en Ingeniería en Informática** 
-**Universidad de la Frontera**
+- Matías Toro
+- Eduardo Gallardo
+
+---
 
 ## 1. Resumen ejecutivo
 
