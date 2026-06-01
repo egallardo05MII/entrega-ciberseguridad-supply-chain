@@ -1,0 +1,192 @@
+{
+  "total_vulnerabilities": 16,
+  "vulnerabilities_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 16
+  },
+  "vulnerabilities": [
+    {
+      "package_name": "quinn-proto",
+      "current_version": "0.11.13",
+      "vuln_id": "GHSA-6xvm-j4wr-6v98",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Quinn affected by unauthenticated remote DoS via panic in QUIC transport parameter parsing",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tauri",
+      "current_version": "2.9.5",
+      "vuln_id": "GHSA-7gmj-67g7-phm9",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Tauri has an Origin Confusion Issue that Allows Remote Pages to Invoke Local-Only IPC Commands",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tar",
+      "current_version": "0.4.44",
+      "vuln_id": "GHSA-gchp-q4r4-x4ff",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "tar-rs incorrectly ignores PAX size headers if header size is nonzero",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tar",
+      "current_version": "0.4.44",
+      "vuln_id": "GHSA-j4xf-2g29-59ph",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "tar-rs `unpack_in` can chmod arbitrary directories by following symlinks",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "bytes",
+      "current_version": "1.11.0",
+      "vuln_id": "GHSA-434x-w66g-qw3r",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "bytes has integer overflow in BytesMut::reserve",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "time",
+      "current_version": "0.3.44",
+      "vuln_id": "GHSA-r6v5-fh4h-64xc",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "time vulnerable to stack exhaustion Denial of Service attack",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "actions/download-artifact",
+      "current_version": "v4",
+      "vuln_id": "GHSA-cxww-7g56-2vh6",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "@actions/download-artifact has an Arbitrary File Write via artifact extraction",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "actions/download-artifact",
+      "current_version": "v4",
+      "vuln_id": "GHSA-cxww-7g56-2vh6",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "@actions/download-artifact has an Arbitrary File Write via artifact extraction",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rustls-webpki",
+      "current_version": "0.103.8",
+      "vuln_id": "GHSA-82j2-j2ch-gfr8",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "rustls-webpki: Denial of service via panic on malformed CRL BIT STRING",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "glib",
+      "current_version": "0.18.5",
+      "vuln_id": "GHSA-wrw7-89jp-8q8g",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rustls-webpki",
+      "current_version": "0.103.8",
+      "vuln_id": "GHSA-pwjx-qhcg-rvj4",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "webpki: CRLs not considered authoritative by Distribution Point due to faulty matching logic",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rand",
+      "current_version": "0.7.3",
+      "vuln_id": "GHSA-cq8v-f236-94qc",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Rand is unsound with a custom logger using rand::rng()",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rand",
+      "current_version": "0.8.5",
+      "vuln_id": "GHSA-cq8v-f236-94qc",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Rand is unsound with a custom logger using rand::rng()",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rand",
+      "current_version": "0.9.2",
+      "vuln_id": "GHSA-cq8v-f236-94qc",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Rand is unsound with a custom logger using rand::rng()",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rustls-webpki",
+      "current_version": "0.103.8",
+      "vuln_id": "GHSA-965h-392x-2mh5",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "webpki: Name constraints for URI names were incorrectly accepted",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rustls-webpki",
+      "current_version": "0.103.8",
+      "vuln_id": "GHSA-xgp8-3hg3-c2mh",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "webpki: Name constraints were accepted for certificates asserting a wildcard name",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    }
+  ],
+  "grype_metadata": {
+    "grype_version": "unknown",
+    "db_location": "",
+    "scanned_path": "/workspaces/produccion_software_emi305/data/repos/opencode"
+  }
+}

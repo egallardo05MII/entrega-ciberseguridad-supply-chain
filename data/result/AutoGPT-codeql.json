@@ -1,0 +1,821 @@
+{
+  "total_issues": 57,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 57,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/incomplete-multi-character-sanitization",
+      "rule_index": 41,
+      "level": "warning",
+      "message": "This string may still contain [<script](1), which may cause an HTML element injection vulnerability.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/copilot/components/ChatMessagesContainer/components/TTSButton.tsx",
+      "region": {
+        "startLine": 14,
+        "startColumn": 5,
+        "endLine": 39,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/stack-trace-exposure",
+      "rule_index": 64,
+      "level": "warning",
+      "message": "This information exposed to the user depends on [stack trace information](1).\nThis information exposed to the user depends on [stack trace information](2).",
+      "file": "autogpt_platform/frontend/src/app/api/chat/sessions/%5BsessionId%5D/stream/route.ts",
+      "region": {
+        "startLine": 91,
+        "startColumn": 7,
+        "endLine": 94,
+        "endColumn": 9
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/stack-trace-exposure",
+      "rule_index": 64,
+      "level": "warning",
+      "message": "This information exposed to the user depends on [stack trace information](1).\nThis information exposed to the user depends on [stack trace information](2).",
+      "file": "autogpt_platform/frontend/src/app/api/chat/sessions/%5BsessionId%5D/stream/route.ts",
+      "region": {
+        "startLine": 159,
+        "startColumn": 7,
+        "endLine": 162,
+        "endColumn": 9
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 85,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "autogpt_platform/backend/load-tests/generate-tokens.js",
+      "region": {
+        "startLine": 90,
+        "startColumn": 57,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "autogpt_platform/frontend/public/push-sw.js",
+      "region": {
+        "startLine": 73,
+        "startColumn": 17,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "autogpt_platform/frontend/public/mockServiceWorker.js",
+      "region": {
+        "startLine": 23,
+        "startColumn": 45,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "autogpt_platform/frontend/public/push-sw.js",
+      "region": {
+        "startLine": 61,
+        "startColumn": 44,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "autogpt_platform/frontend/src/components/molecules/TallyPoup/useTallyPopup.ts",
+      "region": {
+        "startLine": 52,
+        "startColumn": 33,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "autogpt_platform/frontend/src/lib/oauth-popup.ts",
+      "region": {
+        "startLine": 130,
+        "startColumn": 8,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/auth/confirm/route.ts",
+      "region": {
+        "startLine": 14,
+        "startColumn": 7,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/auth/confirm/route.ts",
+      "region": {
+        "startLine": 14,
+        "startColumn": 21,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "autogpt_platform/frontend/src/app/api/auth/provider/route.ts",
+      "region": {
+        "startLine": 12,
+        "startColumn": 10,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/indirect-command-line-injection",
+      "rule_index": 95,
+      "level": "warning",
+      "message": "This command depends on an unsanitized [environment variable](1).\nThis command depends on an unsanitized [environment variable](2).",
+      "file": "autogpt_platform/frontend/scripts/generate-api-queries.ts",
+      "region": {
+        "startLine": 54,
+        "startColumn": 14,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/http-to-file-access",
+      "rule_index": 99,
+      "level": "warning",
+      "message": "Write to file system depends on [Untrusted data](1).",
+      "file": "autogpt_platform/backend/load-tests/generate-tokens.js",
+      "region": {
+        "startLine": 220,
+        "startColumn": 31,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/malformed-html-id",
+      "rule_index": 118,
+      "level": "warning",
+      "message": "The value of the id attribute must not contain any space characters.",
+      "file": "autogpt_platform/frontend/src/components/__legacy__/ui/icons.tsx",
+      "region": {
+        "startLine": 1722,
+        "startColumn": 8,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/malformed-html-id",
+      "rule_index": 118,
+      "level": "warning",
+      "message": "The value of the id attribute must not contain any space characters.",
+      "file": "autogpt_platform/frontend/src/components/atoms/AutoGPTLogo/AutoGPTLogo.tsx",
+      "region": {
+        "startLine": 15,
+        "startColumn": 10,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'pendingTier' cannot be of type null, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/PaywallGate/PaywallModal.tsx",
+      "region": {
+        "startLine": 123,
+        "startColumn": 19,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'output' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/copilot/tools/AskQuestion/helpers.ts",
+      "region": {
+        "startLine": 34,
+        "startColumn": 37,
+        "endColumn": 43
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'raw' cannot be of type null, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/copilot/tools/RunMCPTool/helpers.tsx",
+      "region": {
+        "startLine": 84,
+        "startColumn": 7,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'pendingCycle' cannot be of type null, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/settings/billing/components/SubscriptionTab/YourPlanCard/YourPlanCard.tsx",
+      "region": {
+        "startLine": 203,
+        "startColumn": 19,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'pendingTierUpgrade' cannot be of type null, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/settings/billing/components/SubscriptionTab/YourPlanCard/YourPlanCard.tsx",
+      "region": {
+        "startLine": 216,
+        "startColumn": 19,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'pendingTierDowngrade' cannot be of type null, but it is compared to [an expression](1) of type null.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/settings/billing/components/SubscriptionTab/YourPlanCard/YourPlanCard.tsx",
+      "region": {
+        "startLine": 229,
+        "startColumn": 19,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of next is unused, since it is always overwritten.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/auth/callback/route.ts",
+      "region": {
+        "startLine": 12,
+        "startColumn": 7,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of filteredValue is unused, since it is always overwritten.",
+      "file": "autogpt_platform/frontend/src/components/atoms/Input/helpers.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 7,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable creditsSuccesses.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/core-api-test.js",
+      "region": {
+        "startLine": 83,
+        "startColumn": 9,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable graphsSuccesses.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/core-api-test.js",
+      "region": {
+        "startLine": 84,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable blocksSuccesses.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/core-api-test.js",
+      "region": {
+        "startLine": 85,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused import group.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/graph-execution-test.js",
+      "region": {
+        "startLine": 3,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable graphExecutionTime.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/graph-execution-test.js",
+      "region": {
+        "startLine": 71,
+        "startColumn": 7,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable graphCreationTime.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/graph-execution-test.js",
+      "region": {
+        "startLine": 72,
+        "startColumn": 7,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable executionErrors.",
+      "file": "autogpt_platform/backend/load-tests/tests/api/graph-execution-test.js",
+      "region": {
+        "startLine": 73,
+        "startColumn": 7,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable authCheck.",
+      "file": "autogpt_platform/backend/load-tests/tests/basic/connectivity-test.js",
+      "region": {
+        "startLine": 109,
+        "startColumn": 11,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable tokenStructureCheck.",
+      "file": "autogpt_platform/backend/load-tests/tests/basic/connectivity-test.js",
+      "region": {
+        "startLine": 117,
+        "startColumn": 11,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused import group.",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 2,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused function userProfileJourney.",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 217,
+        "startColumn": 10,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused function graphManagementJourney.",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 245,
+        "startColumn": 10,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused function blockOperationsJourney.",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 401,
+        "startColumn": 10,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused function systemOperationsJourney.",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 441,
+        "startColumn": 10,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function generateScheduleData](1).",
+      "file": "autogpt_platform/backend/load-tests/tests/comprehensive/platform-journey-test.js",
+      "region": {
+        "startLine": 386,
+        "startColumn": 45,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function TransformStream](1).",
+      "file": "autogpt_platform/frontend/src/app/api/chat/sse-helpers.ts",
+      "region": {
+        "startLine": 16,
+        "startColumn": 49,
+        "endLine": 34,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'creditsError' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/admin/components/AdminImpersonationPanel.tsx",
+      "region": {
+        "startLine": 141,
+        "startColumn": 20,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/build/components/NewControlPanel/NewBlockMenu/IntegrationBlocks/IntegrationBlocks.tsx",
+      "region": {
+        "startLine": 46,
+        "startColumn": 26,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/build/components/NewControlPanel/NewBlockMenu/PaginatedBlocksContent/PaginatedBlocksContent.tsx",
+      "region": {
+        "startLine": 38,
+        "startColumn": 26,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/build/components/NewControlPanel/NewBlockMenu/PaginatedIntegrationList/PaginatedIntegrationList.tsx",
+      "region": {
+        "startLine": 27,
+        "startColumn": 26,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'graphVersion' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/build/components/NewControlPanel/NewSaveControl/NewSaveControl.tsx",
+      "region": {
+        "startLine": 102,
+        "startColumn": 30,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/NewAgentLibraryView.tsx",
+      "region": {
+        "startLine": 124,
+        "startColumn": 24,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/SelectedScheduleView.tsx",
+      "region": {
+        "startLine": 48,
+        "startColumn": 11,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/SelectedTemplateView.tsx",
+      "region": {
+        "startLine": 69,
+        "startColumn": 11,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'template' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/SelectedTemplateView.tsx",
+      "region": {
+        "startLine": 178,
+        "startColumn": 8,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/SelectedTriggerView.tsx",
+      "region": {
+        "startLine": 63,
+        "startColumn": 11,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'trigger' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/library/agents/%5Bid%5D/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/SelectedTriggerView.tsx",
+      "region": {
+        "startLine": 171,
+        "startColumn": 8,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/app/(platform)/settings/creator-dashboard/page.tsx",
+      "region": {
+        "startLine": 50,
+        "startColumn": 11,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'loading' always evaluates to false.",
+      "file": "autogpt_platform/frontend/src/components/atoms/Button/Button.tsx",
+      "region": {
+        "startLine": 126,
+        "startColumn": 11,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'loading' always evaluates to false.",
+      "file": "autogpt_platform/frontend/src/components/atoms/Button/Button.tsx",
+      "region": {
+        "startLine": 142,
+        "startColumn": 9,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/components/atoms/DateTimeInput/DateTimeInput.tsx",
+      "region": {
+        "startLine": 227,
+        "startColumn": 13,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'error' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/components/atoms/DateTimeInput/DateTimeInput.tsx",
+      "region": {
+        "startLine": 230,
+        "startColumn": 12,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'isSearchVisible' always evaluates to true.",
+      "file": "autogpt_platform/frontend/src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityDropdown/ActivityDropdown.tsx",
+      "region": {
+        "startLine": 77,
+        "startColumn": 17,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

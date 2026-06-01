@@ -1,0 +1,8 @@
+vector_ataque,fuente,severidad,cantidad
+Dependencias y código fuente,CodeQL/SARIF,Unknown,1740
+Dependencias y código fuente,Grype,Medium,553
+Dependencias y código fuente,Grype,High,440
+Dependencias y código fuente,Grype,Low,155
+Dependencias y código fuente,Grype,Critical,30
+Pipelines de CI/CD,Grype,High,2
+Pipelines de CI/CD,Grype,Critical,1

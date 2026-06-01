@@ -1,0 +1,49 @@
+{
+  "total_issues": 2,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 2,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/call/wrong-arguments",
+      "rule_index": 118,
+      "level": "warning",
+      "message": "Call to [function find_links_in_text](1) with too few arguments; should be no fewer than 1.",
+      "file": "scripts/tests/test_validate_links.py",
+      "region": {
+        "startLine": 76,
+        "startColumn": 13,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-arguments",
+      "rule_index": 118,
+      "level": "warning",
+      "message": "Call to [function get_host_from_link](1) with too few arguments; should be no fewer than 1.",
+      "file": "scripts/tests/test_validate_links.py",
+      "region": {
+        "startLine": 126,
+        "startColumn": 13,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

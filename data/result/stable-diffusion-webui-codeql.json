@@ -1,0 +1,2723 @@
+{
+  "total_issues": 197,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 197,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/stack-trace-exposure",
+      "rule_index": 30,
+      "level": "warning",
+      "message": "[Stack trace information](1) flows to this location and may be exposed to an external user.\n[Stack trace information](2) flows to this location and may be exposed to an external user.\n[Stack trace information](3) flows to this location and may be exposed to an external user.\n[Stack trace information](4) flows to this location and may be exposed to an external user.\n[Stack trace information](5) flows to this location and may be exposed to an external user.\n[Stack trace information](6) flows to this location and may be exposed to an external user.\n[Stack trace information](7) flows to this location and may be exposed to an external user.\n[Stack trace information](8) flows to this location and may be exposed to an external user.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 1229,
+        "startColumn": 34,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/path-injection",
+      "rule_index": 39,
+      "level": "warning",
+      "message": "This path depends on a [user-provided value](1).",
+      "file": "modules/ui_extensions.py",
+      "region": {
+        "startLine": 68,
+        "startColumn": 15,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/path-injection",
+      "rule_index": 39,
+      "level": "warning",
+      "message": "This path depends on a [user-provided value](1).\nThis path depends on a [user-provided value](2).\nThis path depends on a [user-provided value](3).\nThis path depends on a [user-provided value](4).",
+      "file": "modules/ui_tempdir.py",
+      "region": {
+        "startLine": 29,
+        "startColumn": 48,
+        "endColumn": 62
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 51,
+      "level": "warning",
+      "message": "Local variable 'x_recon' may be used before it is initialized.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 277,
+        "startColumn": 13,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 51,
+      "level": "warning",
+      "message": "Local variable 'cbs' may be used before it is initialized.",
+      "file": "modules/models/diffusion/uni_pc/sampler.py",
+      "region": {
+        "startLine": 66,
+        "startColumn": 47,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 51,
+      "level": "warning",
+      "message": "Local variable 'x_recon' may be used before it is initialized.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 237,
+        "startColumn": 13,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 51,
+      "level": "warning",
+      "message": "Local variable 'save' may be used before it is initialized.",
+      "file": "modules/ui_common.py",
+      "region": {
+        "startLine": 233,
+        "startColumn": 21,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 51,
+      "level": "warning",
+      "message": "Local variable 'save_zip' may be used before it is initialized.",
+      "file": "modules/ui_common.py",
+      "region": {
+        "startLine": 249,
+        "startColumn": 21,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 52,
+      "level": "warning",
+      "message": "This assignment to 'last_sigma' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "modules/sd_samplers_extra.py",
+      "region": {
+        "startLine": 68,
+        "startColumn": 13,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "The global variable 'cached_ldsr_model' is not used.",
+      "file": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "region": {
+        "startLine": 50,
+        "startColumn": 17,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "The global variable '_spandrel_extra_init_state' is not used.",
+      "file": "modules/modelloader.py",
+      "region": {
+        "startLine": 158,
+        "startColumn": 9,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "The global variable '_spandrel_extra_init_state' is not used.",
+      "file": "modules/modelloader.py",
+      "region": {
+        "startLine": 161,
+        "startColumn": 9,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "The global variable 'value' is not used.",
+      "file": "modules/api/models.py",
+      "region": {
+        "startLine": 211,
+        "startColumn": 5,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-global-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "The global variable 'current_optimizer' is not used.",
+      "file": "modules/sd_hijack.py",
+      "region": {
+        "startLine": 66,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable B is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 9,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable C is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 12,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable H is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 15,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable W is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 46,
+        "startColumn": 18,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable B is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 228,
+        "startColumn": 9,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable L is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 228,
+        "startColumn": 12,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "Variable C is not used.",
+      "file": "modules/models/sd3/mmdit.py",
+      "region": {
+        "startLine": 228,
+        "startColumn": 15,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 5 positional arguments, whereas overridden [DDPM.p_mean_variance](1) requires 4. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1057,
+        "startColumn": 5,
+        "endLine": 1058,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 4 positional arguments, whereas overridden [DDPM.p_sample](1) may be called with 3. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1089,
+        "startColumn": 5,
+        "endLine": 1091,
+        "endColumn": 97
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 3 positional arguments, whereas overridden [DDPM.p_sample_loop](1) may be called with 2. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1178,
+        "startColumn": 5,
+        "endLine": 1181,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 2 positional arguments, whereas overridden [DDPM.sample](1) may be called with 1. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1231,
+        "startColumn": 5,
+        "endLine": 1233,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 9 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_autosized_crop.py",
+      "region": {
+        "startLine": 56,
+        "startColumn": 5,
+        "endColumn": 134
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 4 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_caption.py",
+      "region": {
+        "startLine": 18,
+        "startColumn": 5,
+        "endColumn": 86
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 5 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "scripts/postprocessing_codeformer.py",
+      "region": {
+        "startLine": 24,
+        "startColumn": 5,
+        "endColumn": 120
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 4 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_create_flipped_copies.py",
+      "region": {
+        "startLine": 21,
+        "startColumn": 5,
+        "endColumn": 86
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 7 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_focal_crop.py",
+      "region": {
+        "startLine": 27,
+        "startColumn": 5,
+        "endColumn": 128
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 4 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "scripts/postprocessing_gfpgan.py",
+      "region": {
+        "startLine": 21,
+        "startColumn": 5,
+        "endColumn": 97
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 5 positional arguments, whereas overridden [ScriptPostprocessing.process](1) requires 2.",
+      "file": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_split_oversized.py",
+      "region": {
+        "startLine": 47,
+        "startColumn": 5,
+        "endColumn": 110
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 5 positional arguments, whereas overridden [DDPMV1.p_mean_variance](1) requires 4. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1036,
+        "startColumn": 5,
+        "endLine": 1037,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 4 positional arguments, whereas overridden [DDPMV1.p_sample](1) may be called with 3. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1068,
+        "startColumn": 5,
+        "endLine": 1070,
+        "endColumn": 97
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 3 positional arguments, whereas overridden [DDPMV1.p_sample_loop](1) may be called with 2. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1157,
+        "startColumn": 5,
+        "endLine": 1160,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires at least 2 positional arguments, whereas overridden [DDPMV1.sample](1) may be called with 1. [This call](2) correctly calls the base method, but does not match the signature of the overriding method.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1210,
+        "startColumn": 5,
+        "endLine": 1212,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/inheritance/signature-mismatch",
+      "rule_index": 66,
+      "level": "warning",
+      "message": "This method requires 5 positional arguments, whereas overridden [UserMetadataEditor.save_user_metadata](1) requires 4.",
+      "file": "modules/ui_extra_networks_checkpoints_user_metadata.py",
+      "region": {
+        "startLine": 13,
+        "startColumn": 5,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-tuple-returns",
+      "rule_index": 67,
+      "level": "warning",
+      "message": "LatentDiffusion.p_mean_variance returns [tuple of size 3](1) and [tuple of size 4](2).\nLatentDiffusion.p_mean_variance returns [tuple of size 3](1) and [tuple of size 4](3).",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1057,
+        "startColumn": 5,
+        "endLine": 1058,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-tuple-returns",
+      "rule_index": 67,
+      "level": "warning",
+      "message": "VQModel.forward returns [tuple of size 2](1) and [tuple of size 3](2).",
+      "file": "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+      "region": {
+        "startLine": 124,
+        "startColumn": 5,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-tuple-returns",
+      "rule_index": 67,
+      "level": "warning",
+      "message": "LatentDiffusionV1.p_mean_variance returns [tuple of size 3](1) and [tuple of size 4](2).\nLatentDiffusionV1.p_mean_variance returns [tuple of size 3](1) and [tuple of size 4](3).",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1036,
+        "startColumn": 5,
+        "endLine": 1037,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "scripts/custom_code.py",
+      "region": {
+        "startLine": 18,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/extensions.py",
+      "region": {
+        "startLine": 137,
+        "startColumn": 9,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/launch_utils.py",
+      "region": {
+        "startLine": 139,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/mac_specific.py",
+      "region": {
+        "startLine": 56,
+        "endColumn": 74
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/masking.py",
+      "region": {
+        "startLine": 4,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/options.py",
+      "region": {
+        "startLine": 90,
+        "startColumn": 5,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/options.py",
+      "region": {
+        "startLine": 329,
+        "startColumn": 5,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+      "region": {
+        "startLine": 149,
+        "startColumn": 5,
+        "endColumn": 62
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 107,
+        "startColumn": 5,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sd_models_xl.py",
+      "region": {
+        "startLine": 73,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sd_models_xl.py",
+      "region": {
+        "startLine": 78,
+        "endColumn": 54
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sd_vae.py",
+      "region": {
+        "startLine": 251,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "extensions-builtin/soft-inpainting/scripts/soft_inpainting.py",
+      "region": {
+        "startLine": 498,
+        "startColumn": 5,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sysinfo.py",
+      "region": {
+        "startLine": 38,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/sysinfo.py",
+      "region": {
+        "startLine": 171,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/textual_inversion/textual_inversion.py",
+      "region": {
+        "startLine": 96,
+        "startColumn": 5,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 113,
+        "endColumn": 97
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 197,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 557,
+        "startColumn": 33,
+        "endColumn": 63
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui_extra_networks_checkpoints.py",
+      "region": {
+        "startLine": 17,
+        "startColumn": 5,
+        "endColumn": 65
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui_extra_networks_hypernets.py",
+      "region": {
+        "startLine": 15,
+        "startColumn": 5,
+        "endColumn": 65
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "region": {
+        "startLine": 18,
+        "startColumn": 5,
+        "endColumn": 65
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui_extra_networks_textual_inversion.py",
+      "region": {
+        "startLine": 15,
+        "startColumn": 5,
+        "endColumn": 65
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/ui_prompt_styles.py",
+      "region": {
+        "startLine": 35,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/models/diffusion/uni_pc/uni_pc.py",
+      "region": {
+        "startLine": 125,
+        "startColumn": 5,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/models/diffusion/uni_pc/uni_pc.py",
+      "region": {
+        "startLine": 292,
+        "startColumn": 5,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/mixed-returns",
+      "rule_index": 69,
+      "level": "warning",
+      "message": "Mixing implicit and explicit returns may indicate an error, as implicit returns always return None.",
+      "file": "modules/models/diffusion/uni_pc/uni_pc.py",
+      "region": {
+        "startLine": 324,
+        "startColumn": 5,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/not-named-self",
+      "rule_index": 75,
+      "level": "warning",
+      "message": "Normal methods should have 'self', rather than 'request', as their first parameter.",
+      "file": "modules/api/api.py",
+      "region": {
+        "startLine": 925,
+        "startColumn": 5,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/procedure-return-value-used",
+      "rule_index": 78,
+      "level": "warning",
+      "message": "The result of [create_hypernetwork](1) is used even though it is always None.",
+      "file": "modules/api/api.py",
+      "region": {
+        "startLine": 798,
+        "startColumn": 24,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/procedure-return-value-used",
+      "rule_index": 78,
+      "level": "warning",
+      "message": "The result of [create_hypernetwork](1) is used even though it is always None.",
+      "file": "modules/hypernetworks/ui.py",
+      "region": {
+        "startLine": 12,
+        "startColumn": 16,
+        "endColumn": 200
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/api/api.py",
+      "region": {
+        "startLine": 144,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/extensions.py",
+      "region": {
+        "startLine": 149,
+        "startColumn": 9,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/images.py",
+      "region": {
+        "startLine": 559,
+        "startColumn": 13,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/images.py",
+      "region": {
+        "startLine": 866,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/infotext_utils.py",
+      "region": {
+        "startLine": 483,
+        "startColumn": 13,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/launch_utils.py",
+      "region": {
+        "startLine": 250,
+        "startColumn": 5,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/launch_utils.py",
+      "region": {
+        "startLine": 364,
+        "startColumn": 5,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "region": {
+        "startLine": 244,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/modelloader.py",
+      "region": {
+        "startLine": 87,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/modelloader.py",
+      "region": {
+        "startLine": 112,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/postprocessing.py",
+      "region": {
+        "startLine": 106,
+        "startColumn": 21,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/sd_hijack_utils.py",
+      "region": {
+        "startLine": 16,
+        "startColumn": 17,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 136,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 304,
+        "startColumn": 21,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 712,
+        "startColumn": 9,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/shared_init.py",
+      "region": {
+        "startLine": 23,
+        "startColumn": 5,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/ui_common.py",
+      "region": {
+        "startLine": 176,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/ui_loadsave.py",
+      "region": {
+        "startLine": 30,
+        "startColumn": 9,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/upscaler.py",
+      "region": {
+        "startLine": 47,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/util.py",
+      "region": {
+        "startLine": 66,
+        "startColumn": 5,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "modules/xpu_specific.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call-to-non-callable",
+      "rule_index": 101,
+      "level": "warning",
+      "message": "Call to a [non-callable](1) of [class ClipTokenWeightEncoder](2).",
+      "file": "modules/models/sd3/other_impls.py",
+      "region": {
+        "startLine": 234,
+        "startColumn": 23,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unnecessary-lambda",
+      "rule_index": 113,
+      "level": "warning",
+      "message": "This 'lambda' is just a simple wrapper around a callable object. Use that object directly.",
+      "file": "modules/ui_settings.py",
+      "region": {
+        "startLine": 298,
+        "startColumn": 40,
+        "endColumn": 78
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-equals",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "The class 'PasteField' does not override ['__eq__'](1), but adds the new attribute [api](2).\nThe class 'PasteField' does not override ['__eq__'](1), but adds the new attribute [component](3).\nThe class 'PasteField' does not override ['__eq__'](1), but adds the new attribute [label](4).\nThe class 'PasteField' does not override ['__eq__'](1), but adds the new attribute [function](5).",
+      "file": "modules/infotext_utils.py",
+      "region": {
+        "startLine": 34,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-equals",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "The class 'BundledTIHash' does not override ['__eq__'](1), but adds the new attribute [hash](2).",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 150,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/missing-equals",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "The class 'SdConditioning' does not override ['__eq__'](1), but adds the new attribute [is_negative_prompt](2).\nThe class 'SdConditioning' does not override ['__eq__'](1), but adds the new attribute [width](3).\nThe class 'SdConditioning' does not override ['__eq__'](1), but adds the new attribute [height](4).",
+      "file": "modules/prompt_parser.py",
+      "region": {
+        "startLine": 139,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/init-calls-subclass",
+      "rule_index": 126,
+      "level": "warning",
+      "message": "This call to [DDPM.register_schedule](1) in an initialization method is overridden by [LatentDiffusion.register_schedule](2).",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 122,
+        "startColumn": 9,
+        "endLine": 123,
+        "endColumn": 100
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/init-calls-subclass",
+      "rule_index": 126,
+      "level": "warning",
+      "message": "This call to [DDPMV1.register_schedule](1) in an initialization method is overridden by [LatentDiffusionV1.register_schedule](2).",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 105,
+        "startColumn": 9,
+        "endLine": 106,
+        "endColumn": 100
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 126,
+        "endColumn": 92
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 127,
+        "endColumn": 90
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 141,
+        "endColumn": 79
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 142,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 153,
+        "endColumn": 104
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/call/wrong-number-class-arguments",
+      "rule_index": 134,
+      "level": "warning",
+      "message": "Call to [CondFunc.__init__](1) with too few arguments; should be no fewer than 3.",
+      "file": "modules/sd_hijack_unet.py",
+      "region": {
+        "startLine": 154,
+        "endColumn": 104
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](1).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](2).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](3).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](4).",
+      "file": "extensions-builtin/Lora/network_glora.py",
+      "region": {
+        "startLine": 17,
+        "startColumn": 13,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](1).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](2).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](3).\nAssignment overwrites attribute shape, which was previously defined in superclass [NetworkModule](4).",
+      "file": "extensions-builtin/Lora/network_hada.py",
+      "region": {
+        "startLine": 18,
+        "startColumn": 13,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_hada.py",
+      "region": {
+        "startLine": 22,
+        "startColumn": 9,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_lokr.py",
+      "region": {
+        "startLine": 31,
+        "startColumn": 9,
+        "endColumn": 75
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_lokr.py",
+      "region": {
+        "startLine": 35,
+        "startColumn": 9,
+        "endColumn": 75
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_lora.py",
+      "region": {
+        "startLine": 32,
+        "startColumn": 9,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute scale, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_oft.py",
+      "region": {
+        "startLine": 23,
+        "startColumn": 9,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute alpha, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_oft.py",
+      "region": {
+        "startLine": 30,
+        "startColumn": 13,
+        "endColumn": 54
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_oft.py",
+      "region": {
+        "startLine": 31,
+        "startColumn": 13,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute dim, which was previously defined in superclass [NetworkModule](1).",
+      "file": "extensions-builtin/Lora/network_oft.py",
+      "region": {
+        "startLine": 37,
+        "startColumn": 13,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute do_not_save, which was previously defined in superclass [OptionInfo](1).",
+      "file": "modules/options.py",
+      "region": {
+        "startLine": 65,
+        "startColumn": 9,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute hijack, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 296,
+        "startColumn": 9,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute is_trainable, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 302,
+        "startColumn": 9,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute input_key, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 303,
+        "startColumn": 9,
+        "endColumn": 62
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute return_pooled, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 304,
+        "startColumn": 9,
+        "endColumn": 75
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute comma_token, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 323,
+        "startColumn": 9,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute id_start, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 342,
+        "startColumn": 9,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute id_end, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 343,
+        "startColumn": 9,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute id_pad, which was previously defined in superclass [TextConditionalModel](1).",
+      "file": "modules/sd_hijack_clip.py",
+      "region": {
+        "startLine": 344,
+        "startColumn": 9,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute mask_before_denoising, which was previously defined in superclass [CFGDenoiser](1).",
+      "file": "modules/sd_samplers_timesteps.py",
+      "region": {
+        "startLine": 54,
+        "startColumn": 9,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/overwritten-inherited-attribute",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Assignment overwrites attribute after_update, which was previously defined in superclass [UniPC](1).",
+      "file": "modules/sd_samplers_timesteps_impl.py",
+      "region": {
+        "startLine": 157,
+        "startColumn": 9,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/file-not-closed",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "File is opened but is not closed.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 320,
+        "startColumn": 44,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/file-not-closed",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "File is opened but is not closed.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 131,
+        "startColumn": 53,
+        "endColumn": 124
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1100,
+        "startColumn": 13,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "modules/models/diffusion/ddpm_edit.py",
+      "region": {
+        "startLine": 1113,
+        "startColumn": 13,
+        "endColumn": 110
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "region": {
+        "startLine": 93,
+        "startColumn": 17,
+        "endColumn": 105
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "modules/prompt_parser.py",
+      "region": {
+        "startLine": 127,
+        "startColumn": 17,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1079,
+        "startColumn": 13,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-statement",
+      "rule_index": 140,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "region": {
+        "startLine": 1092,
+        "startColumn": 13,
+        "endColumn": 110
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/use-of-exit-or-quit",
+      "rule_index": 141,
+      "level": "warning",
+      "message": "The 'exit' site.Quitter object may not exist if the 'site' module is not loaded or is modified.",
+      "file": "launch.py",
+      "region": {
+        "startLine": 33,
+        "startColumn": 9,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/use-of-exit-or-quit",
+      "rule_index": 141,
+      "level": "warning",
+      "message": "The 'exit' site.Quitter object may not exist if the 'site' module is not loaded or is modified.",
+      "file": "modules/launch_utils.py",
+      "region": {
+        "startLine": 446,
+        "startColumn": 9,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/print-during-import",
+      "rule_index": 143,
+      "level": "warning",
+      "message": "Print statement may execute during import.",
+      "file": "modules/paths.py",
+      "region": {
+        "startLine": 50,
+        "startColumn": 9,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/print-during-import",
+      "rule_index": 143,
+      "level": "warning",
+      "message": "Print statement may execute during import.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 54,
+        "startColumn": 5,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unnecessary-pass",
+      "rule_index": 146,
+      "level": "warning",
+      "message": "Unnecessary 'pass' statement.",
+      "file": "modules/sd_hijack_utils.py",
+      "region": {
+        "startLine": 25,
+        "startColumn": 17,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 151,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "scripts/outpainting_mk_2.py",
+      "region": {
+        "startLine": 75,
+        "startColumn": 5,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 151,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "modules/sub_quadratic_attention.py",
+      "region": {
+        "startLine": 42,
+        "startColumn": 21,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/ineffectual-statement",
+      "rule_index": 151,
+      "level": "warning",
+      "message": "This statement has no effect.",
+      "file": "modules/sub_quadratic_attention.py",
+      "region": {
+        "startLine": 51,
+        "startColumn": 18,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/redundant-assignment",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This assignment assigns a variable to itself.",
+      "file": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "region": {
+        "startLine": 67,
+        "startColumn": 9,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/redundant-assignment",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This assignment assigns a variable to itself.",
+      "file": "scripts/postprocessing_upscale.py",
+      "region": {
+        "startLine": 135,
+        "startColumn": 9,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/redundant-assignment",
+      "rule_index": 160,
+      "level": "warning",
+      "message": "This assignment assigns a variable to itself.",
+      "file": "scripts/postprocessing_upscale.py",
+      "region": {
+        "startLine": 145,
+        "startColumn": 9,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'extensions_dir' is not used.\nImport of 'extensions_builtin_dir' is not used.",
+      "file": "modules/cmd_args.py",
+      "region": {
+        "startLine": 4,
+        "endColumn": 166
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'pillow_avif' is not used.",
+      "file": "modules/images.py",
+      "region": {
+        "startLine": 17,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'torchvision' is not used.",
+      "file": "modules/import_hook.py",
+      "region": {
+        "startLine": 10,
+        "startColumn": 5,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'sd_hijack_autoencoder' is not used.",
+      "file": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'sd_hijack_ddpm_v1' is not used.",
+      "file": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'lora' is not used.",
+      "file": "extensions-builtin/Lora/scripts/lora_script.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'modules' is not used.",
+      "file": "modules/paths.py",
+      "region": {
+        "startLine": 5,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'slerp' is not used.",
+      "file": "modules/processing.py",
+      "region": {
+        "startLine": 20,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'CLIPModel' is not used.",
+      "file": "modules/sd_models.py",
+      "region": {
+        "startLine": 133,
+        "startColumn": 5,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'CFGDenoiser' is not used.",
+      "file": "modules/sd_samplers_kdiffusion.py",
+      "region": {
+        "startLine": 5,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'PngImagePlugin' is not used.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 12,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'wrap_gradio_call' is not used.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 13,
+        "endColumn": 113
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 161,
+      "level": "warning",
+      "message": "Import of 'ipex' is not used.",
+      "file": "modules/xpu_specific.py",
+      "region": {
+        "startLine": 7,
+        "startColumn": 5,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/api/api.py",
+      "region": {
+        "startLine": 19,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/img2img.py",
+      "region": {
+        "startLine": 14,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.processing' is imported with both 'import' and 'import from'.",
+      "file": "modules/img2img.py",
+      "region": {
+        "startLine": 15,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.sd_hijack' is imported with both 'import' and 'import from'.",
+      "file": "modules/processing.py",
+      "region": {
+        "startLine": 18,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/processing.py",
+      "region": {
+        "startLine": 24,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/progress.py",
+      "region": {
+        "startLine": 10,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/sd_samplers_cfg_denoiser.py",
+      "region": {
+        "startLine": 5,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/sd_samplers_kdiffusion.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/sd_samplers_timesteps.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/txt2img.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.infotext_utils' is imported with both 'import' and 'import from'.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 24,
+        "endColumn": 54
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "modules/ui.py",
+      "region": {
+        "startLine": 28,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.infotext_utils' is imported with both 'import' and 'import from'.",
+      "file": "modules/ui_common.py",
+      "region": {
+        "startLine": 14,
+        "endColumn": 54
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/import-and-import-from",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Module 'modules.shared' is imported with both 'import' and 'import from'.",
+      "file": "scripts/xyz_grid.py",
+      "region": {
+        "startLine": 17,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [networks](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/lora_patches.py",
+      "region": {
+        "startLine": 3,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [networks](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network.py",
+      "region": {
+        "startLine": 76,
+        "startColumn": 13,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [networks](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network.py",
+      "region": {
+        "startLine": 84,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_full.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_glora.py",
+      "region": {
+        "startLine": 2,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_hada.py",
+      "region": {
+        "startLine": 2,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_ia3.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_lokr.py",
+      "region": {
+        "startLine": 4,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_lora.py",
+      "region": {
+        "startLine": 5,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_norm.py",
+      "region": {
+        "startLine": 1,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/network_oft.py",
+      "region": {
+        "startLine": 2,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [lora_patches](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 8,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_lora](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_glora](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 10,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_hada](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 11,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_ia3](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 12,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_lokr](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 13,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_full](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 14,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_norm](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 15,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [network_oft](1) begins an import cycle.",
+      "file": "extensions-builtin/Lora/networks.py",
+      "region": {
+        "startLine": 16,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [modules.ui_extra_networks_textual_inversion](1) begins an import cycle.",
+      "file": "modules/ui_extra_networks.py",
+      "region": {
+        "startLine": 695,
+        "startColumn": 5,
+        "endColumn": 94
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [modules.ui_extra_networks_hypernets](1) begins an import cycle.",
+      "file": "modules/ui_extra_networks.py",
+      "region": {
+        "startLine": 696,
+        "startColumn": 5,
+        "endColumn": 83
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [modules.ui_extra_networks](1) begins an import cycle.",
+      "file": "modules/ui_extra_networks_hypernets.py",
+      "region": {
+        "startLine": 4,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/cyclic-import",
+      "rule_index": 167,
+      "level": "warning",
+      "message": "Import of module [modules.ui_extra_networks](1) begins an import cycle.",
+      "file": "modules/ui_extra_networks_textual_inversion.py",
+      "region": {
+        "startLine": 4,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/repeated-import",
+      "rule_index": 168,
+      "level": "warning",
+      "message": "This import of module importlib.metadata is redundant, as it was previously imported [on line 9](1).",
+      "file": "modules/launch_utils.py",
+      "region": {
+        "startLine": 289,
+        "startColumn": 5,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

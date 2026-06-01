@@ -1,0 +1,13 @@
+repo,paquetes_totales,paquetes_unicos,tipos
+n8n,5001,3363,"github-action, github-action-workflow, npm, python, terraform"
+freeCodeCamp,2867,2374,"github-action, github-action-workflow, npm"
+AutoGPT,2631,2122,"github-action, npm, python"
+dify,2160,2001,"github-action, github-action-workflow, npm, php-composer, python"
+ui,4657,1596,"github-action, npm"
+developer-roadmap,1647,980,"github-action, npm"
+opencode,775,606,"github-action, rust-crate"
+stable-diffusion-webui,46,40,"github-action, python"
+claude-code-action,37,19,"github-action, github-action-workflow, npm"
+public-apis,11,7,"github-action, python"
+coding-interview-university,5,5,github-action
+genai-code-review,5,5,"github-action, python"

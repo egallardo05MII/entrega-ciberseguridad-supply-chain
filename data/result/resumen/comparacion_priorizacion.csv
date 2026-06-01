@@ -1,0 +1,13 @@
+repo,paquetes_unicos,paquetes_totales,vulnerabilidades_grype,grype_critical,grype_high,grype_medium,grype_low,grype_negligible,grype_unknown,hallazgos_codeql,vulnerabilidades_criticas_altas,puntaje_prioridad
+n8n,3363,5001,138.0,4.0,52.0,60.0,22.0,0.0,0.0,633.0,56.0,3097.63
+ui,1596,4657,387.0,8.0,150.0,183.0,46.0,0.0,0.0,121.0,158.0,2028.96
+developer-roadmap,980,1647,129.0,1.0,38.0,66.0,24.0,0.0,0.0,241.0,39.0,1409.8
+stable-diffusion-webui,40,46,134.0,10.0,56.0,60.0,8.0,0.0,0.0,197.0,66.0,1404.4
+dify,2001,2160,20.0,0.0,4.0,16.0,0.0,0.0,0.0,277.0,4.0,1200.01
+AutoGPT,2122,2631,227.0,4.0,88.0,106.0,29.0,0.0,0.0,57.0,92.0,1135.22
+freeCodeCamp,2374,2867,105.0,4.0,42.0,39.0,20.0,0.0,0.0,63.0,46.0,684.74
+opencode,606,775,16.0,0.0,4.0,7.0,5.0,0.0,0.0,129.0,4.0,567.06
+claude-code-action,19,37,5.0,0.0,2.0,3.0,0.0,0.0,0.0,16.0,2.0,85.19
+public-apis,7,11,17.0,0.0,6.0,10.0,1.0,0.0,0.0,2.0,6.0,74.07
+genai-code-review,5,5,3.0,0.0,0.0,3.0,0.0,0.0,0.0,4.0,0.0,25.05
+coding-interview-university,5,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05

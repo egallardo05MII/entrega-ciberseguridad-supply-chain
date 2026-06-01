@@ -1,0 +1,70 @@
+{
+  "repositories": [
+    {
+      "url": "https://github.com/anthropics/claude-code-action.git",
+      "path": "data/repos/claude-code-action",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/cirolini/genai-code-review.git",
+      "path": "data/repos/genai-code-review",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode.git",
+      "path": "data/repos/opencode",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/n8n-io/n8n.git",
+      "path": "data/repos/n8n",
+      "ref": null
+    },
+     {
+    "url": "https://github.com/langgenius/dify.git",
+    "path": "data/repos/dify",
+    "ref": null
+    },
+    {
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+      "path": "data/repos/freeCodeCamp",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/codecrafters-io/build-your-own-x.git",
+      "path": "data/repos/build-your-own-x",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/public-apis/public-apis.git",
+      "path": "data/repos/public-apis",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/Significant-Gravitas/AutoGPT.git",
+      "path": "data/repos/AutoGPT",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+      "path": "data/repos/stable-diffusion-webui",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/shadcn-ui/ui.git",
+      "path": "data/repos/ui",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/kamranahmedse/developer-roadmap.git",
+      "path": "data/repos/developer-roadmap",
+      "ref": null
+    },
+    {
+      "url": "https://github.com/jwasham/coding-interview-university.git",
+      "path": "data/repos/coding-interview-university",
+      "ref": null
+    }
+    
+  ]
+}

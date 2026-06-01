@@ -1,0 +1,907 @@
+{
+  "total_issues": 63,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 63,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/incomplete-hostname-regexp",
+      "rule_index": 29,
+      "level": "warning",
+      "message": "This regular expression has an unescaped '.' before 'algolia.net', so it might match more hosts than expected.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 52,
+        "startColumn": 23,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-hostname-regexp",
+      "rule_index": 29,
+      "level": "warning",
+      "message": "This regular expression has an unescaped '.' before 'algolia.net', so it might match more hosts than expected.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 56,
+        "startColumn": 23,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-hostname-regexp",
+      "rule_index": 29,
+      "level": "warning",
+      "message": "This regular expression has an unescaped '.' before 'algolia.net', so it might match more hosts than expected.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 60,
+        "startColumn": 23,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-url-substring-sanitization",
+      "rule_index": 30,
+      "level": "warning",
+      "message": "'[https://schema.org](1)' can be anywhere in the URL, and arbitrary hosts may come before or after it.",
+      "file": "client/src/components/seo/seo.test.tsx",
+      "region": {
+        "startLine": 53,
+        "startColumn": 11,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-multi-character-sanitization",
+      "rule_index": 41,
+      "level": "warning",
+      "message": "This string may still contain [<script](1), which may cause an HTML element injection vulnerability.",
+      "file": "client/src/templates/Challenges/components/speaking-modal-helpers.ts",
+      "region": {
+        "startLine": 186,
+        "startColumn": 10,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/bad-tag-filter",
+      "rule_index": 45,
+      "level": "warning",
+      "message": "This regular expression does not match upper case <SCRIPT> tags.",
+      "file": "tools/challenge-parser/translation-parser/index.js",
+      "region": {
+        "startLine": 61,
+        "startColumn": 18,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/html-constructed-from-input",
+      "rule_index": 50,
+      "level": "warning",
+      "message": "This HTML construction which depends on [library input](1) might later allow [cross-site scripting](2).",
+      "file": "packages/challenge-builder/src/transformers.js",
+      "region": {
+        "startLine": 350,
+        "startColumn": 23,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/html-constructed-from-input",
+      "rule_index": 50,
+      "level": "warning",
+      "message": "This HTML construction which depends on [library input](1) might later allow [cross-site scripting](2).",
+      "file": "packages/challenge-builder/src/transformers.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 23,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/html-constructed-from-input",
+      "rule_index": 50,
+      "level": "warning",
+      "message": "This HTML construction which depends on [library input](1) might later allow [cross-site scripting](2).",
+      "file": "packages/challenge-builder/src/transformers.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 23,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/html-constructed-from-input",
+      "rule_index": 50,
+      "level": "warning",
+      "message": "This HTML construction which depends on [library input](1) might later allow [cross-site scripting](2).",
+      "file": "packages/challenge-builder/src/transformers.js",
+      "region": {
+        "startLine": 356,
+        "startColumn": 23,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/shell-command-injection-from-environment",
+      "rule_index": 63,
+      "level": "warning",
+      "message": "This shell command depends on an uncontrolled [absolute path](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 44,
+        "startColumn": 13,
+        "endColumn": 74
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/shell-command-injection-from-environment",
+      "rule_index": 63,
+      "level": "warning",
+      "message": "This shell command depends on an uncontrolled [absolute path](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 96,
+        "startColumn": 25,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 68,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "api/src/plugins/auth0.ts",
+      "region": {
+        "startLine": 69,
+        "startColumn": 30,
+        "endLine": 84,
+        "endColumn": 8
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 68,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "api/src/plugins/auth0.ts",
+      "region": {
+        "startLine": 86,
+        "startColumn": 37,
+        "endLine": 103,
+        "endColumn": 8
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/clear-text-cookie",
+      "rule_index": 78,
+      "level": "warning",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "file": "client/src/utils/growthbook-cookie.test.ts",
+      "region": {
+        "startLine": 14,
+        "startColumn": 5,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-randomness",
+      "rule_index": 79,
+      "level": "warning",
+      "message": "This uses a cryptographically insecure random number generated at [Math.random()](1) in a security context.",
+      "file": "client/src/utils/growthbook-cookie.ts",
+      "region": {
+        "startLine": 35,
+        "startColumn": 16,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 49,
+        "startColumn": 17,
+        "endColumn": 63
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 52,
+        "startColumn": 35,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 74,
+        "startColumn": 17,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "tools/scripts/sync-i18n.ts",
+      "region": {
+        "startLine": 79,
+        "startColumn": 17,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "client/static/python-input-sw.js",
+      "region": {
+        "startLine": 11,
+        "startColumn": 27,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "tools/client-plugins/browser-scripts/python-worker.ts",
+      "region": {
+        "startLine": 182,
+        "startColumn": 18,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "tools/client-plugins/browser-scripts/sass-compile.ts",
+      "region": {
+        "startLine": 26,
+        "startColumn": 17,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "tools/client-plugins/browser-scripts/typescript-worker.ts",
+      "region": {
+        "startLine": 63,
+        "startColumn": 18,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "client/src/components/helpers/avatar-renderer.tsx",
+      "region": {
+        "startLine": 29,
+        "startColumn": 8,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "client/src/components/profile/components/profile-completeness.tsx",
+      "region": {
+        "startLine": 39,
+        "startColumn": 7,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "client/src/components/profile/components/profile-completeness.tsx",
+      "region": {
+        "startLine": 40,
+        "startColumn": 7,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "e2e/help-modal.spec.ts",
+      "region": {
+        "startLine": 183,
+        "startColumn": 37,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 52,
+        "startColumn": 22,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 56,
+        "startColumn": 22,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "e2e/search-bar.spec.ts",
+      "region": {
+        "startLine": 60,
+        "startColumn": 22,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "This hostname pattern may match any domain name, as it is missing a '$' or '/' at the end.",
+      "file": "e2e/solution-viewer.spec.ts",
+      "region": {
+        "startLine": 49,
+        "startColumn": 37,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/react/inconsistent-state-update",
+      "rule_index": 105,
+      "level": "warning",
+      "message": "Component state update uses [potentially inconsistent value](1).",
+      "file": "client/src/components/profile/components/heat-map.tsx",
+      "region": {
+        "startLine": 64,
+        "startColumn": 5,
+        "endLine": 69,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/react/inconsistent-state-update",
+      "rule_index": 105,
+      "level": "warning",
+      "message": "Component state update uses [potentially inconsistent value](1).",
+      "file": "client/src/components/profile/components/heat-map.tsx",
+      "region": {
+        "startLine": 73,
+        "startColumn": 5,
+        "endLine": 78,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'data' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "api/vitest.utils.ts",
+      "region": {
+        "startLine": 294,
+        "startColumn": 5,
+        "endColumn": 9
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of formFields is unused, since it is always overwritten.",
+      "file": "client/src/templates/Challenges/projects/solution-form.tsx",
+      "region": {
+        "startLine": 70,
+        "startColumn": 9,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to blockLayout here is unused.",
+      "file": "tools/challenge-helper-scripts/create-language-block.ts",
+      "region": {
+        "startLine": 107,
+        "startColumn": 5,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable x.",
+      "file": "client/src/utils/format.test.ts",
+      "region": {
+        "startLine": 6,
+        "startColumn": 7,
+        "endColumn": 8
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/components/Donation/donate-form.tsx",
+      "region": {
+        "startLine": 126,
+        "startColumn": 3,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/components/Header/index.tsx",
+      "region": {
+        "startLine": 41,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/components/profile/components/username.tsx",
+      "region": {
+        "startLine": 73,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/components/settings/user-token.tsx",
+      "region": {
+        "startLine": 20,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/templates/Challenges/classic/editor-tabs.tsx",
+      "region": {
+        "startLine": 37,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/templates/Challenges/classic/mobile-layout.tsx",
+      "region": {
+        "startLine": 83,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/templates/Challenges/components/preview-portal.tsx",
+      "region": {
+        "startLine": 74,
+        "startColumn": 3,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 159,
+      "level": "warning",
+      "message": "This write to property 'displayName' is useless, since [another property write](1) always overrides it.",
+      "file": "client/src/templates/Introduction/components/block.tsx",
+      "region": {
+        "startLine": 80,
+        "startColumn": 3,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function stripeCardErrorHandler](1).",
+      "file": "client/src/redux/donation-saga.js",
+      "region": {
+        "startLine": 111,
+        "startColumn": 11,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function postChallenge](1).",
+      "file": "client/src/templates/Challenges/redux/completion-epic.js",
+      "region": {
+        "startLine": 180,
+        "startColumn": 32,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function postChallenge](1).",
+      "file": "client/src/templates/Challenges/redux/completion-epic.js",
+      "region": {
+        "startLine": 227,
+        "startColumn": 34,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function previewChallengeSaga](1).",
+      "file": "client/src/templates/Challenges/redux/execute-challenge-saga.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 32,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function populateTestsForLang](1).",
+      "file": "curriculum/src/test/test-challenges.js",
+      "region": {
+        "startLine": 137,
+        "startColumn": 47,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'value' always evaluates to true.",
+      "file": "client/src/components/formHelpers/form-fields.tsx",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/experience.tsx",
+      "region": {
+        "startLine": 318,
+        "startColumn": 28,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/experience.tsx",
+      "region": {
+        "startLine": 341,
+        "startColumn": 28,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/experience.tsx",
+      "region": {
+        "startLine": 378,
+        "startColumn": 28,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/experience.tsx",
+      "region": {
+        "startLine": 406,
+        "startColumn": 28,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/portfolio.tsx",
+      "region": {
+        "startLine": 270,
+        "startColumn": 28,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/portfolio.tsx",
+      "region": {
+        "startLine": 292,
+        "startColumn": 43,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/username.tsx",
+      "region": {
+        "startLine": 180,
+        "startColumn": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "client/src/components/profile/components/username.tsx",
+      "region": {
+        "startLine": 186,
+        "startColumn": 16,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'query' always evaluates to true.",
+      "file": "client/src/components/search/searchBar/search-bar-footer.tsx",
+      "region": {
+        "startLine": 36,
+        "startColumn": 62,
+        "endColumn": 67
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'shownHint' always evaluates to true.",
+      "file": "client/src/templates/Challenges/classic/lower-jaw.tsx",
+      "region": {
+        "startLine": 391,
+        "startColumn": 30,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-comparison-test",
+      "rule_index": 197,
+      "level": "warning",
+      "message": "The condition 'storedWidth <= 25' is always true.",
+      "file": "client/src/utils/scrollbar-width.ts",
+      "region": {
+        "startLine": 5,
+        "startColumn": 30,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

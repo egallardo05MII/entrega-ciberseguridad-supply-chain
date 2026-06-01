@@ -1,0 +1,236 @@
+{
+  "total_vulnerabilities": 20,
+  "vulnerabilities_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 20
+  },
+  "vulnerabilities": [
+    {
+      "package_name": "react-server-dom-webpack",
+      "current_version": "19.2.5",
+      "vuln_id": "GHSA-rv78-f8rc-xrxh",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Facebook React has a Denial of Service Vulnerability in React Server Components",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "mermaid",
+      "current_version": "11.14.0",
+      "vuln_id": "GHSA-xcj9-5m2h-648r",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Mermaid: Improper sanitization of `classDefs` in diagrams leads to CSS injection",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "dompurify",
+      "current_version": "3.3.2",
+      "vuln_id": "GHSA-crv5-9vww-q3g8",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "DOMPurify has a SAFE_FOR_TEMPLATES bypass in RETURN_DOM mode",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "ujson",
+      "current_version": "5.12.0",
+      "vuln_id": "GHSA-c38f-wx89-p2xg",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "UltraJSON has a Memory Leak in ujson.dump() on Write Failure",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "mermaid",
+      "current_version": "11.14.0",
+      "vuln_id": "GHSA-ghcm-xqfw-q4vr",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Mermaid: Improper sanitization of `classDef` in state diagrams leads to HTML injection",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "langsmith",
+      "current_version": "0.7.31",
+      "vuln_id": "GHSA-3644-q5cj-c5c7",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "LangSmith SDK: Public prompt pull deserializes untrusted manifests without trust boundary warning",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "qs",
+      "current_version": "6.15.1",
+      "vuln_id": "GHSA-q8mj-m7cp-5q26",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "dompurify",
+      "current_version": "3.3.2",
+      "vuln_id": "GHSA-v9jr-rg53-9pgp",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "authlib",
+      "current_version": "1.6.11",
+      "vuln_id": "GHSA-r95x-qfjj-fjj2",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Authlib OIDC Implicit/Hybrid Authorization Vulnerable to Open Redirect",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "uuid",
+      "current_version": "11.1.0",
+      "vuln_id": "GHSA-w5hq-g745-h8pq",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "dompurify",
+      "current_version": "3.3.2",
+      "vuln_id": "GHSA-h7mw-gpvr-xq4m",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "DOMPurify: FORBID_TAGS bypassed by function-based ADD_TAGS predicate (asymmetry with FORBID_ATTR fix)",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "postcss",
+      "current_version": "8.4.31",
+      "vuln_id": "GHSA-qx2v-qp2m-jg93",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "ws",
+      "current_version": "8.18.3",
+      "vuln_id": "GHSA-58qx-3vcg-4xpx",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "ws: Uninitialized memory disclosure",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "ws",
+      "current_version": "8.20.0",
+      "vuln_id": "GHSA-58qx-3vcg-4xpx",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "ws: Uninitialized memory disclosure",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "js-cookie",
+      "current_version": "3.0.5",
+      "vuln_id": "GHSA-qjx8-664m-686j",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "JavaScript Cookie: Per-instance prototype hijack in assign() enables cookie-attribute injection",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "brace-expansion",
+      "current_version": "5.0.5",
+      "vuln_id": "GHSA-jxxr-4gwj-5jf2",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "brace-expansion: Large numeric range defeats documented `max` DoS protection",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "dompurify",
+      "current_version": "3.3.2",
+      "vuln_id": "GHSA-39q2-94rc-95cp",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "DOMPurify's ADD_TAGS function form bypasses FORBID_TAGS due to short-circuit evaluation",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "idna",
+      "current_version": "3.11",
+      "vuln_id": "GHSA-65pc-fj4g-8rjx",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.encode() can bypass CVE-2024-3651 fix",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "mermaid",
+      "current_version": "11.14.0",
+      "vuln_id": "GHSA-6m6c-36f7-fhxh",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Mermaid Gantt Charts are vulnerable to an Infinite Loop DoS",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "mermaid",
+      "current_version": "11.14.0",
+      "vuln_id": "GHSA-87f9-hvmw-gh4p",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Mermaid: Improper sanitization of configuration leads to CSS injection",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    }
+  ],
+  "grype_metadata": {
+    "grype_version": "unknown",
+    "db_location": "",
+    "scanned_path": "/workspaces/produccion_software_emi305/data/repos/dify"
+  }
+}

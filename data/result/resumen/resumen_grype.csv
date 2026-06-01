@@ -1,0 +1,12 @@
+repo,Critical,High,Medium,Low,Negligible,Unknown
+AutoGPT,4,88,106,29,0,0
+claude-code-action,0,2,3,0,0,0
+developer-roadmap,1,38,66,24,0,0
+dify,0,4,16,0,0,0
+freeCodeCamp,4,42,39,20,0,0
+genai-code-review,0,0,3,0,0,0
+n8n,4,52,60,22,0,0
+opencode,0,4,7,5,0,0
+public-apis,0,6,10,1,0,0
+stable-diffusion-webui,10,56,60,8,0,0
+ui,8,150,183,46,0,0

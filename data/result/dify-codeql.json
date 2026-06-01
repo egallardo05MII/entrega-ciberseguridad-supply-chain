@@ -1,0 +1,3898 @@
+{
+  "total_issues": 277,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 277,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/incomplete-hostname-regexp",
+      "rule_index": 29,
+      "level": "warning",
+      "message": "This regular expression has an unescaped '.' before 'example.com', so it might match more hosts than expected.",
+      "file": "web/app/components/datasets/settings/form/components/__tests__/external-knowledge-section.spec.tsx",
+      "region": {
+        "startLine": 303,
+        "startColumn": 32,
+        "endColumn": 79
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-url-substring-sanitization",
+      "rule_index": 30,
+      "level": "warning",
+      "message": "'[https://github.com/org/plugin](1)' can be anywhere in the URL, and arbitrary hosts may come before or after it.",
+      "file": "web/app/components/plugins/plugin-page/__tests__/plugin-info.spec.tsx",
+      "region": {
+        "startLine": 55,
+        "startColumn": 29,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-multi-character-sanitization",
+      "rule_index": 41,
+      "level": "warning",
+      "message": "This string may still contain [<script](1), which may cause an HTML element injection vulnerability.",
+      "file": "web/app/components/app/configuration/config-var/config-modal/form-fields.tsx",
+      "region": {
+        "startLine": 76,
+        "startColumn": 38,
+        "endColumn": 119
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/xss-through-dom",
+      "rule_index": 47,
+      "level": "warning",
+      "message": "[DOM text](1) is reinterpreted as HTML without escaping meta-characters.",
+      "file": "web/app/components/base/app-icon-picker/ImageInput.tsx",
+      "region": {
+        "startLine": 77,
+        "startColumn": 19,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/shell-command-injection-from-environment",
+      "rule_index": 63,
+      "level": "warning",
+      "message": "This shell command depends on an uncontrolled [file name](1).",
+      "file": "web/scripts/analyze-i18n-diff.ts",
+      "region": {
+        "startLine": 127,
+        "startColumn": 21,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/clear-text-cookie",
+      "rule_index": 78,
+      "level": "warning",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "file": "web/app/signin/components/sso-auth.tsx",
+      "region": {
+        "startLine": 45,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "web/scripts/analyze-component.js",
+      "region": {
+        "startLine": 448,
+        "startColumn": 22,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "web/scripts/check-i18n.js",
+      "region": {
+        "startLine": 192,
+        "startColumn": 7,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "web/scripts/refactor-component.js",
+      "region": {
+        "startLine": 345,
+        "startColumn": 22,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "web/app/components/base/chat/embedded-chatbot/header/index.tsx",
+      "region": {
+        "startLine": 66,
+        "startColumn": 23,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "web/hooks/use-oauth.ts",
+      "region": {
+        "startLine": 54,
+        "startColumn": 26,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/regex/missing-regexp-anchor",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "When this is used as a regular expression on a URL, it may match anywhere, and arbitrary hosts may come before or after it.",
+      "file": "web/app/components/datasets/settings/form/components/__tests__/external-knowledge-section.spec.tsx",
+      "region": {
+        "startLine": 303,
+        "startColumn": 31,
+        "endColumn": 80
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-temporary-file",
+      "rule_index": 97,
+      "level": "warning",
+      "message": "Insecure creation of file in [the os temp dir](1).",
+      "file": ".github/scripts/generate-i18n-changes.mjs",
+      "region": {
+        "startLine": 75,
+        "startColumn": 3,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/redundant-operation",
+      "rule_index": 119,
+      "level": "warning",
+      "message": "Operands [Ie](1) and [Ie](2) are identical.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 38049,
+        "endColumn": 38055
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/whitespace-contradicts-precedence",
+      "rule_index": 120,
+      "level": "warning",
+      "message": "Whitespace around nested operators contradicts precedence.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 164310,
+        "endColumn": 164339
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/whitespace-contradicts-precedence",
+      "rule_index": 120,
+      "level": "warning",
+      "message": "Whitespace around nested operators contradicts precedence.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 365,
+        "startColumn": 4334,
+        "endColumn": 4487
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/whitespace-contradicts-precedence",
+      "rule_index": 120,
+      "level": "warning",
+      "message": "Whitespace around nested operators contradicts precedence.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 393,
+        "startColumn": 5288,
+        "endColumn": 5326
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/whitespace-contradicts-precedence",
+      "rule_index": 120,
+      "level": "warning",
+      "message": "Whitespace around nested operators contradicts precedence.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 51312,
+        "startColumn": 1791,
+        "endColumn": 1822
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/whitespace-contradicts-precedence",
+      "rule_index": 120,
+      "level": "warning",
+      "message": "Whitespace around nested operators contradicts precedence.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 51312,
+        "startColumn": 1939,
+        "endColumn": 1970
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'rawParam' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "web/app/components/workflow/nodes/trigger-plugin/default.ts",
+      "region": {
+        "startLine": 267,
+        "startColumn": 61,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'v' cannot be of type string, but it is compared to [an expression](1) of type string.",
+      "file": "web/app/components/workflow/nodes/trigger-webhook/components/generic-table.tsx",
+      "region": {
+        "startLine": 16,
+        "startColumn": 12,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'tt' is of type number, but it is compared to [an expression](1) of type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 27,
+        "startColumn": 37,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 122,
+      "level": "warning",
+      "message": "Variable 'F' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 61378,
+        "endColumn": 61379
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "This guard always evaluates to true.",
+      "file": "web/__tests__/workflow-onboarding-integration.test.tsx",
+      "region": {
+        "startLine": 386,
+        "startColumn": 11,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "This guard always evaluates to false.",
+      "file": "web/app/components/apps/list.tsx",
+      "region": {
+        "startLine": 138,
+        "startColumn": 11,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "This guard always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 41994,
+        "endColumn": 41996
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 18,
+        "startColumn": 6089,
+        "endColumn": 6105
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 18,
+        "startColumn": 6536,
+        "endColumn": 6541
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 18,
+        "startColumn": 8415,
+        "endColumn": 8423
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 71919,
+        "endColumn": 71927
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 71930,
+        "endColumn": 71940
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 71943,
+        "endColumn": 71951
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 71960,
+        "endColumn": 71972
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 72021,
+        "endColumn": 72033
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 74120,
+        "endColumn": 74144
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 74514,
+        "endColumn": 74520
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/call-to-non-callable",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Callee is not a function: it has type undefined.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 74723,
+        "endColumn": 74738
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to o here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 8,
+        "startColumn": 18217,
+        "endColumn": 18236
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to mn here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 15,
+        "startColumn": 507,
+        "endColumn": 512
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to qr here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 15,
+        "startColumn": 1031,
+        "endColumn": 1036
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to v here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 23,
+        "startColumn": 282,
+        "endColumn": 305
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to s here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 29,
+        "startColumn": 71823,
+        "endColumn": 71827
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of vt is unused, since it is always overwritten.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 80703,
+        "endColumn": 80708
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to u1 here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 102397,
+        "endColumn": 102402
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to ew here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 102489,
+        "endColumn": 102494
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to Sr here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 103755,
+        "endColumn": 103760
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to bi here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 103890,
+        "endColumn": 103895
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to E here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 14105,
+        "endColumn": 14109
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to ne here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 102454,
+        "endColumn": 102472
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of Mo is unused, since it is always overwritten.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 155629,
+        "endColumn": 155634
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to tn here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 158328,
+        "endColumn": 158333
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to U here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 350,
+        "startColumn": 25369,
+        "endColumn": 25373
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The initial value of h is unused, since it is always overwritten.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 10228,
+        "endColumn": 10231
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to R here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 86550,
+        "endColumn": 86554
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to t here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 44123,
+        "endColumn": 44127
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "The value assigned to E here is unused.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 46540,
+        "endColumn": 46544
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable user.",
+      "file": "web/app/components/workflow/nodes/parameter-extractor/components/extract-parameter/__tests__/list.spec.tsx",
+      "region": {
+        "startLine": 35,
+        "startColumn": 11,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused function ift.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 29,
+        "startColumn": 59456,
+        "endColumn": 59459
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 150,
+      "level": "warning",
+      "message": "Unused variable It.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 323,
+        "startColumn": 2406,
+        "endColumn": 2408
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/embed.js",
+      "region": {
+        "startLine": 77,
+        "startColumn": 5,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 15,
+        "startColumn": 2886,
+        "endColumn": 2901
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (98% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 18,
+        "startColumn": 517,
+        "endColumn": 544
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 142,
+        "endColumn": 157
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 28,
+        "startColumn": 42971,
+        "endColumn": 42987
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 29,
+        "startColumn": 15805,
+        "endColumn": 15813
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 29,
+        "startColumn": 16538,
+        "endColumn": 16550
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 29,
+        "startColumn": 58780,
+        "endColumn": 58849
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 31,
+        "startColumn": 87021,
+        "endColumn": 87029
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (95% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 31,
+        "startColumn": 95647,
+        "endColumn": 95706
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 31,
+        "startColumn": 97264,
+        "endColumn": 97281
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 53582,
+        "endColumn": 53590
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 57024,
+        "endColumn": 57040
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 64417,
+        "endColumn": 64478
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 66702,
+        "endColumn": 66754
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 66942,
+        "endColumn": 66953
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 84808,
+        "endColumn": 84848
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 88491,
+        "endColumn": 88499
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 90070,
+        "endColumn": 90075
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 90076,
+        "endColumn": 90087
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 318,
+        "startColumn": 98684,
+        "endColumn": 98706
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "endColumn": 10188
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 1833,
+        "endColumn": 1838
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 1839,
+        "endColumn": 1848
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 10893,
+        "endColumn": 11040
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 81929,
+        "endColumn": 82090
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 123123,
+        "endColumn": 123129
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 123583,
+        "endColumn": 123589
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 123823,
+        "endColumn": 123828
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 123967,
+        "endColumn": 123972
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 123973,
+        "endColumn": 123984
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 140150,
+        "endColumn": 140155
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 140742,
+        "endColumn": 140747
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 140782,
+        "endColumn": 140850
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 141747,
+        "endColumn": 141815
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 142544,
+        "endColumn": 142571
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 163148,
+        "endColumn": 163316
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 208829,
+        "endColumn": 208844
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 243887,
+        "endColumn": 243914
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 323,
+        "startColumn": 2322,
+        "endColumn": 2399
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 3111,
+        "endColumn": 3198
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 17213,
+        "endColumn": 17221
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 105808,
+        "endColumn": 105819
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 124648,
+        "endColumn": 124657
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 364974,
+        "endColumn": 365006
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 366198,
+        "endColumn": 366257
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 366258,
+        "endColumn": 366267
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 370681,
+        "endColumn": 370686
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 383100,
+        "endColumn": 383129
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 392746,
+        "endColumn": 392830
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 422396,
+        "endColumn": 423301
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 450924,
+        "endColumn": 450956
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 452905,
+        "endColumn": 452918
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 454915,
+        "endColumn": 454920
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 454921,
+        "endColumn": 454946
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 477892,
+        "endColumn": 477928
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 478465,
+        "endColumn": 478560
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 478825,
+        "endColumn": 478992
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 478993,
+        "endColumn": 479038
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 479211,
+        "endColumn": 479286
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 479764,
+        "endColumn": 479769
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 483744,
+        "endColumn": 483788
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 485240,
+        "endColumn": 485256
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 485613,
+        "endColumn": 485686
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 486631,
+        "endColumn": 486636
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 486639,
+        "endColumn": 487236
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 554442,
+        "endColumn": 554451
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 4240,
+        "endColumn": 4256
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 23141,
+        "endColumn": 23154
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 53802,
+        "endColumn": 53832
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 53833,
+        "endColumn": 53868
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 56116,
+        "endColumn": 56139
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 57729,
+        "endColumn": 57746
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 66187,
+        "endColumn": 66201
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 66210,
+        "endColumn": 66227
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 91649,
+        "endColumn": 91666
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 101948,
+        "endColumn": 101965
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 139561,
+        "endColumn": 139577
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 144256,
+        "endColumn": 144293
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 151970,
+        "endColumn": 151975
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 167731,
+        "endColumn": 167802
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 170785,
+        "endColumn": 170790
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 178243,
+        "endColumn": 178286
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 180439,
+        "endColumn": 180519
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 180768,
+        "endColumn": 180786
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 186797,
+        "endColumn": 186820
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 198684,
+        "endColumn": 198703
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 205763,
+        "endColumn": 205775
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 9108,
+        "endColumn": 9120
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 30258,
+        "endColumn": 30332
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 30333,
+        "endColumn": 30388
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 48695,
+        "endColumn": 48796
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 73514,
+        "endColumn": 73554
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 77707,
+        "endColumn": 77725
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 81392,
+        "endColumn": 81398
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 81443,
+        "endColumn": 81475
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 82560,
+        "endColumn": 82627
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 82692,
+        "endColumn": 82755
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (97% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 117561,
+        "endColumn": 117566
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 131184,
+        "endColumn": 131192
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 165994,
+        "endColumn": 166079
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 167813,
+        "endColumn": 167821
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 181182,
+        "endColumn": 181273
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 334,
+        "startColumn": 8871,
+        "endColumn": 8884
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 10267,
+        "endColumn": 10275
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 10379,
+        "endColumn": 10387
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 12390,
+        "endColumn": 12398
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 20437,
+        "endColumn": 20443
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 20444,
+        "endColumn": 20468
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 342,
+        "startColumn": 9546,
+        "endColumn": 9552
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 847,
+        "endColumn": 863
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 2456,
+        "endColumn": 2462
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 4564,
+        "endColumn": 4569
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 4570,
+        "endColumn": 4688
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 9251,
+        "endColumn": 9328
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 29921,
+        "endColumn": 30115
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 56310,
+        "endColumn": 56384
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 73556,
+        "endColumn": 73619
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 350,
+        "startColumn": 692,
+        "endColumn": 700
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (94% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 351,
+        "startColumn": 6219,
+        "endColumn": 6266
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 6926,
+        "endColumn": 6938
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 7147,
+        "endColumn": 7152
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 7422,
+        "endColumn": 7427
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 7490,
+        "endColumn": 7495
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 7539,
+        "endColumn": 7550
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 7551,
+        "endColumn": 7569
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 352,
+        "startColumn": 35631,
+        "endColumn": 35647
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 353,
+        "startColumn": 9430,
+        "endColumn": 9542
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 353,
+        "startColumn": 18200,
+        "endColumn": 18274
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 353,
+        "startColumn": 20630,
+        "endColumn": 20661
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 31892,
+        "endColumn": 31897
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 31907,
+        "endColumn": 31922
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 33066,
+        "endColumn": 33071
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 354,
+        "startColumn": 60543,
+        "endColumn": 60574
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 36358,
+        "endColumn": 36397
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 43864,
+        "endColumn": 43880
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 44328,
+        "endColumn": 44351
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (93% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 54638,
+        "endColumn": 54661
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 70375,
+        "endColumn": 70388
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 74107,
+        "endColumn": 74115
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 106196,
+        "endColumn": 106212
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 116198,
+        "endColumn": 116204
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 116239,
+        "endColumn": 116245
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (96% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 121188,
+        "endColumn": 121211
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 5484,
+        "endColumn": 5489
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (92% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 6041,
+        "endColumn": 6168
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 48422,
+        "endColumn": 48444
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (90% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 365,
+        "startColumn": 50680,
+        "endColumn": 50806
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (91% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 375,
+        "startColumn": 22241,
+        "endColumn": 22286
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/automatic-semicolon-insertion",
+      "rule_index": 166,
+      "level": "warning",
+      "message": "Avoid automated semicolon insertion (99% of all statements in [the enclosing function](1) have an explicit semicolon).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 393,
+        "startColumn": 154055,
+        "endColumn": 154067
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [constructor of class MockCompressionStream](1).",
+      "file": "web/app/components/app/overview/app-card-utils.ts",
+      "region": {
+        "startLine": 214,
+        "startColumn": 42,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous arguments passed to [function createRagPipelineSliceSlice](1).",
+      "file": "web/app/components/rag-pipeline/store/__tests__/index.spec.ts",
+      "region": {
+        "startLine": 22,
+        "startColumn": 83,
+        "endColumn": 103
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [constructor of class MockCompressionStream](1).",
+      "file": "web/public/embed.js",
+      "region": {
+        "startLine": 89,
+        "startColumn": 46,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function l](1).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 68247,
+        "endColumn": 68253
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous arguments passed to [function o](1).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 68279,
+        "endColumn": 68292
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function l](1).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 69466,
+        "endColumn": 69472
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 170,
+      "level": "warning",
+      "message": "Superfluous arguments passed to [function o](1).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 26,
+        "startColumn": 69506,
+        "endColumn": 69519
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/index-out-of-bounds",
+      "rule_index": 181,
+      "level": "warning",
+      "message": "Off-by-one index comparison against length may lead to out-of-bounds [read](1).",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 358,
+        "startColumn": 77258,
+        "endColumn": 77269
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unreachable-statement",
+      "rule_index": 191,
+      "level": "warning",
+      "message": "This statement is unreachable.",
+      "file": "web/app/components/app/configuration/config-prompt/simple-prompt-input.tsx",
+      "region": {
+        "startLine": 125,
+        "startColumn": 7,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-loop-variable",
+      "rule_index": 194,
+      "level": "warning",
+      "message": "For loop variable l is not used in the loop body.\nFor loop variable d is not used in the loop body.\nFor loop variable p is not used in the loop body.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 390,
+        "startColumn": 15753,
+        "endColumn": 15858
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'shouldAutoOpenStartNodeSelector' always evaluates to true.",
+      "file": "web/__tests__/workflow-onboarding-integration.test.tsx",
+      "region": {
+        "startLine": 303,
+        "startColumn": 32,
+        "endColumn": 63
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'appDetail' always evaluates to true.",
+      "file": "web/app/(commonLayout)/app/(appDetailLayout)/%5BappId%5D/layout-main.tsx",
+      "region": {
+        "startLine": 165,
+        "startColumn": 8,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'errorInfo' always evaluates to true.",
+      "file": "web/app/components/base/error-boundary/index.tsx",
+      "region": {
+        "startLine": 158,
+        "startColumn": 18,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/base/features/new-feature-panel/annotation-reply/use-annotation-config.ts",
+      "region": {
+        "startLine": 37,
+        "startColumn": 12,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'uploadDisabled' always evaluates to false.",
+      "file": "web/app/components/custom/custom-web-app-brand/index.tsx",
+      "region": {
+        "startLine": 53,
+        "startColumn": 27,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to false.",
+      "file": "web/app/components/custom/custom-web-app-brand/index.tsx",
+      "region": {
+        "startLine": 53,
+        "startColumn": 46,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'datasetId' always evaluates to true.",
+      "file": "web/app/components/datasets/create/index.tsx",
+      "region": {
+        "startLine": 145,
+        "startColumn": 47,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'datasetId' always evaluates to true.",
+      "file": "web/app/components/datasets/create/step-one/index.tsx",
+      "region": {
+        "startLine": 113,
+        "startColumn": 55,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'hasSetIndexType' always evaluates to true.",
+      "file": "web/app/components/datasets/create/step-two/components/indexing-mode-section.tsx",
+      "region": {
+        "startLine": 116,
+        "startColumn": 32,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'hasSetIndexType' always evaluates to true.",
+      "file": "web/app/components/datasets/create/step-two/components/indexing-mode-section.tsx",
+      "region": {
+        "startLine": 147,
+        "startColumn": 32,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'datasetId' always evaluates to true.",
+      "file": "web/app/components/datasets/create/step-two/index.tsx",
+      "region": {
+        "startLine": 54,
+        "startColumn": 41,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'detail' always evaluates to true.",
+      "file": "web/app/components/plugins/plugin-detail-panel/index.tsx",
+      "region": {
+        "startLine": 76,
+        "startColumn": 16,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/plugins/reference-setting-modal/auto-update-setting/__tests__/index.spec.tsx",
+      "region": {
+        "startLine": 104,
+        "startColumn": 29,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'detail' always evaluates to true.",
+      "file": "web/app/components/tools/mcp/detail/provider-detail.tsx",
+      "region": {
+        "startLine": 55,
+        "startColumn": 16,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'supportFold' always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/_base/components/field.tsx",
+      "region": {
+        "startLine": 80,
+        "startColumn": 41,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'itemChildren' always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/_base/components/variable/utils.ts",
+      "region": {
+        "startLine": 289,
+        "startColumn": 14,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/code/default.ts",
+      "region": {
+        "startLine": 26,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/document-extractor/default.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/http/default.ts",
+      "region": {
+        "startLine": 44,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/human-input/default.ts",
+      "region": {
+        "startLine": 36,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/iteration/default.ts",
+      "region": {
+        "startLine": 32,
+        "startColumn": 7,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/knowledge-retrieval/default.ts",
+      "region": {
+        "startLine": 31,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/list-operator/default.ts",
+      "region": {
+        "startLine": 42,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'conditions' always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/loop/components/condition-wrap.tsx",
+      "region": {
+        "startLine": 84,
+        "startColumn": 13,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/parameter-extractor/default.ts",
+      "region": {
+        "startLine": 35,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/parameter-extractor/panel.tsx",
+      "region": {
+        "startLine": 114,
+        "startColumn": 22,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/parameter-extractor/panel.tsx",
+      "region": {
+        "startLine": 117,
+        "startColumn": 22,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/question-classifier/default.ts",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/start/components/var-item.tsx",
+      "region": {
+        "startLine": 87,
+        "startColumn": 18,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/template-transform/default.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/trigger-schedule/default.ts",
+      "region": {
+        "startLine": 126,
+        "startColumn": 9,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'contentType' always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/trigger-webhook/utils/parameter-type-utils.ts",
+      "region": {
+        "startLine": 106,
+        "startColumn": 34,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/variable-assigner/default.ts",
+      "region": {
+        "startLine": 35,
+        "startColumn": 16,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "web/app/components/workflow/nodes/variable-assigner/default.ts",
+      "region": {
+        "startLine": 44,
+        "startColumn": 16,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'T' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 221533,
+        "endColumn": 221534
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'Ai' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 320,
+        "startColumn": 237848,
+        "endColumn": 237850
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'a' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 14997,
+        "endColumn": 14998
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'u' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 82690,
+        "endColumn": 82691
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'g' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 258579,
+        "endColumn": 258580
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable '_' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 343349,
+        "endColumn": 343350
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'N' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 370540,
+        "endColumn": 370541
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'Kt' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 327,
+        "startColumn": 425114,
+        "endColumn": 425116
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'wSe' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 6808,
+        "endColumn": 6811
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This expression always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 8627,
+        "endColumn": 8636
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'K' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 8635,
+        "endColumn": 8636
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'hr' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 37790,
+        "endColumn": 37792
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'ae' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 40482,
+        "endColumn": 40484
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'Re' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 328,
+        "startColumn": 206972,
+        "endColumn": 206974
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'ai' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 329,
+        "startColumn": 112730,
+        "endColumn": 112732
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'i' always evaluates to false.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 333,
+        "startColumn": 556,
+        "endColumn": 557
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'r' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 339,
+        "startColumn": 18471,
+        "endColumn": 18472
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'r' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 60539,
+        "endColumn": 60540
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'o' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 60919,
+        "endColumn": 60920
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 's' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 346,
+        "startColumn": 71327,
+        "endColumn": 71328
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'U' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 350,
+        "startColumn": 36863,
+        "endColumn": 36864
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'r' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 105794,
+        "endColumn": 105795
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'h' always evaluates to true.",
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "region": {
+        "startLine": 355,
+        "startColumn": 125595,
+        "endColumn": 125596
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 195,
+      "level": "warning",
+      "message": "This use of variable 'type' always evaluates to true.",
+      "file": "web/utils/var.ts",
+      "region": {
+        "startLine": 27,
+        "startColumn": 11,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}
