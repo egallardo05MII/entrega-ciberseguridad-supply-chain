@@ -1,5 +1,13 @@
 # Propuesta de gestión de vulnerabilidades en cadena de suministro de software
 
+Asignatura: **Produccion de Software EMI 305**
+Profesor: Pablo Valenzuela 
+**Alumnos:**
+- Matías Toro 
+- Eduardo Gallardo 
+**Magister en Ingeniería en Informática** 
+**Universidad de la Frontera**
+
 ## 1. Resumen ejecutivo
 
 Este repositorio presenta una propuesta para gestionar vulnerabilidades encontradas en una colección de repositorios de software. El análisis se construyó a partir de SBOMs, reportes de vulnerabilidades en dependencias, hallazgos CodeQL/SARIF y tablas consolidadas generadas mediante notebooks y scripts de apoyo.
