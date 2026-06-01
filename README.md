@@ -503,29 +503,7 @@ entrega-ciberseguridad/
 
 ---
 
-## 12. Guion sugerido para presentación oral o video
-
-Duración sugerida: 5 a 10 minutos.
-
-1. **Contexto:** se analizaron repositorios usando SBOM, Grype y CodeQL/SARIF.
-2. **Evidencia:** mostrar CSVs, reportes originales y gráficas.
-3. **Hallazgos principales:** explicar repositorios con más Critical/High.
-4. **Vectores:** dependencias/código, CI/CD y humanos.
-5. **Ciclo:** presentar 2 o 3 casos Conozco → Verifico → Evidencio → Decido y Actúo.
-6. **Priorización:** explicar P0, P1, P2 y P3.
-7. **Acciones:** actualizar, probar, reescanear, revisar workflows y definir responsables.
-8. **Cierre:** explicar cómo la propuesta reduce riesgo.
-
-Gráficas recomendadas para la presentación:
-
-- `vulnerabilidades_criticas_altas.png`
-- `Densidad_de_riesgo.png`
-- `Mapa_de_calor_vulnerabilidades_por_severidad.png`
-- `Pareto_vulnerabilidades_por_repositorio.png`
-
----
-
-## 13. Conclusiones
+## 12. Conclusiones
 
 El análisis muestra que la gestión de vulnerabilidades debe priorizarse según evidencia y contexto, no solo por cantidad de alertas. Los repositorios con mayor concentración de vulnerabilidades Critical/High son candidatos para mitigación inmediata, especialmente cuando existe versión corregida y ubicación clara en lockfiles, requirements o workflows.
 
